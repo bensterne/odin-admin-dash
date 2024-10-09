@@ -1,0 +1,272 @@
+body{
+    font-family: "Roboto", sans-serif;
+    padding:0;
+    margin:0;
+    --bg-grey-1: #E0E1E6;
+}
+
+p{
+    margin:0;
+    padding:0;
+}
+.container{
+    display:grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 1fr 4fr;
+    height:100vh;
+}
+
+.sidebar{
+    background-color:var(--bg-grey-1);
+    grid-row:1 / -1;
+    padding:20px 30px;
+}
+
+.sidebar > div {
+    margin-bottom:40px;
+}
+
+#logo{
+    width:48px;
+    fill:white;
+}
+
+.logo{
+    font-size:24px;
+    display:grid;
+    grid-template-columns: 50px 1fr;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+}
+
+.menu-1, .menu-2{
+    display:grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows:50px 50px;
+    grid-auto-rows:50px;
+    font-size:20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    width:28px;
+}
+
+.nav{
+    background-color: white;
+    padding:20px 30px;
+    box-sizing: border-box;
+}
+
+.nav-top{
+    display: grid;
+    grid-template-columns: 1fr 228px;
+    gap:clamp(8px,3vw,140px);
+    box-sizing: border-box;
+    margin-bottom:10px;
+}
+
+.nav-top .left{
+    display:grid;
+    grid-template-columns: 40px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar{
+    background-color:var(--bg-grey-1);
+    width:calc(100%-12px);
+    height:32px;
+    border-radius:30px;
+    gap:4px;
+    outline:none;
+    border:none;
+    padding:0px 12px;
+}
+
+.nav-top .right{
+    display:grid;
+    grid-template-columns: 40px 56px 124px;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
+    font-size:18px;
+}
+
+.avatar{
+    width:40px;
+}
+
+.nav-bottom{
+    display: grid;
+    grid-template-columns: 1fr 296px;
+    box-sizing: border-box;
+    align-items: center;
+    gap:8px;
+}
+
+.nav-bottom .left{
+    display:grid;
+    grid-template-columns: 72px 1fr;
+    align-items: center;
+    gap:8px;
+}
+
+.avatar.big{
+    width:64px;
+}
+
+.subtext{
+    font-size: 13px;
+    margin:0;
+    padding:0;
+}
+.name{
+    font-size: 20px;
+    margin:0;
+    padding:0;
+}
+
+.nav-bottom .right{
+    display:grid;
+    grid-template-columns: repeat(3, 88px);
+    justify-content: end;
+    gap:16px;
+}
+
+button{
+    border:none;
+    background-color:#8B8D98;
+    color:white;
+    height:36px;
+    font-size:14px;
+    font-weight:bold;
+    border-radius:20px;
+}
+
+.main-area{
+    background-color:#F0F0F3;
+    padding:30px;
+    box-sizing: border-box;
+    display:grid;
+    gap:30px;
+    grid-template-columns: 3fr minmax(146px,1fr);
+    grid-template-rows: 405px 1fr;
+    font-size:20px;
+}
+
+.main-area > div > p{
+    margin:0 0 10px 0;
+    padding:0;
+}
+
+
+
+.your-projects{
+   grid-row:1 / -1; 
+}
+
+.main-card-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 218px;
+    grid-auto-rows: 218px;
+    gap:30px;
+}
+
+.main-card{
+    border-left:10px solid #60646C;
+    background-color: white;
+    padding:30px clamp(15px,2vw, 30px);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display:grid;
+    grid-template-rows: 28px 1fr 28px;
+    align-items:stretch;
+    overflow:scroll;
+}
+
+.card-title{
+    font-size:18px;
+    margin-bottom:5px;
+}
+
+.card-text{
+    font-size:16px;
+    color: #60646C
+}
+
+.card-icons{
+    display:grid;
+    grid-template-columns: 28px 28px 28px;
+    justify-content:end;
+    gap:15px;
+}
+
+.side-card{
+    background-color: white;
+    padding:30px clamp(15px,2vw, 30px);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.side-card.announcements{
+    max-height: 310px;
+    overflow:scroll;
+}
+
+.headline-item{
+    min-width: 146px;
+}
+.h-title, .h-subtext {
+    margin:0;
+    padding:0;
+}
+
+.h-title{
+    margin-bottom:5px;
+    font-size:13px;
+}
+
+.h-subtext{
+    font-size:12px;
+    color:#60646C;
+}
+
+.divider{
+    margin:20px 0px;
+    height:1px;
+    background-color: #B9BBC6;
+}
+
+.right-side-cell{
+    display:grid;
+    grid-template-rows: 33.5px 1fr;
+}
+
+.trend-item {
+    display:grid;
+    grid-template-columns: 56px 1fr;
+    grid-template-rows: 20px 20px;
+    margin-bottom:20px;
+    align-items: center;
+}
+
+.trend-item:nth-last-child(1){
+    margin-bottom: 0px;
+}
+
+.trend-item > .avatar{
+    grid-row: 1 / -1;
+    margin-right:5px;
+}
+
+.trend-tag, .trend-name{
+    font-size:13px;
+}
+
+.trend-name{
+   color: #60646C;
+}
